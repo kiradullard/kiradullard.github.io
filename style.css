@@ -1,0 +1,192 @@
+    @charset "utf-8";
+    /* CSS Document */
+    /* ====== GENERAL STYLES ====== */
+    
+    body {
+        background: #ffffff;
+    }
+    .container {
+        align-content: center;
+    }
+    .container-fluid {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .orange-container {
+        background-color: #ed9d05;
+        min-height: 15px;
+        width: 100%;
+    }
+    h1 {
+        color: #ffffff;
+        font-size: 48pt;
+        text-align: center;
+        text-shadow: 2px 2px #515254;
+    }
+    @media(max-width:400px) {
+        h1 {
+            font-size: 48px;
+        }
+    }
+    h2 {
+        color: #ed9d05;
+        font-size: 28pt;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #3c3c3d;
+    }
+    a:link {
+        color: #ed9d05;
+    }
+    /* ====== NAV BAR ====== */
+    
+    .navbar {
+        background: #ed9d05;
+        text-align: center;
+    }
+    .nav-link {
+        color: #ffffff;
+        text-align: center;
+        padding: 0 80px;
+    }
+    .nav-link:hover {
+        color: #ffffff;
+    }
+    .nav-link:a {
+        color: #ffffff;
+    }
+    .nav-item {
+        padding: 0 10px;
+    }
+    .navbar-toggler-icon {
+        color: #ffffff;
+    }
+    /* ====== PARALLAX SCROLL ====== */
+    
+    .parallax {
+        background-image: url("hero.jpg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        position: relative;
+    }
+    .text-box {
+        height: 600px;
+        padding: 0px;
+    }
+    @media only screen and (max-device-width: 1024px) {
+        .parallax {
+            background-attachment: scroll;
+        }
+    }
+    #header {
+        margin-top: 200px;
+        top: 200px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .navbar {
+        margin-bottom: 0 !important;
+    }
+    /* ====== BUTTON ====== */
+    
+    .btn-primary {
+        color: #ffffff;
+        background-color: #ed9d05;
+        width: 300px;
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: none;
+        font-size: 16pt;
+        margin-bottom: 15px;
+    }
+    .btn-primary:hover {
+        font-size: 17pt;
+        background-color: #de9406;
+    }
+    /* ====== FONT AWESOME ====== */
+    
+    .fa-4x {
+        color: #ed9d05;
+    }
+    .fa-2x {
+        color: #000000;
+        align-content: center;
+    }
+    .rounded-circle {
+        background-color: #ed9d05;
+        color: #ffffff;
+        align-content: center;
+        padding-left: auto !important;
+        padding-right: auto !important;
+        height: 20px;
+        width: 20px;
+    }
+    /* ====== MAP ====== */
+    
+    .google-maps {
+        position: relative;
+        padding-bottom: 250px; // This is the aspect ratio
+        height: 250;
+        overflow: hidden;
+        margin-top: 100px;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 250px !important;
+    }
+    /* ====== FAQs ====== */
+    
+    .accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .accordion-toggle {
+        border-bottom: 1px solid #cccccc;
+        cursor: pointer;
+        margin: 0;
+        padding: 10px 0;
+        position: relative;
+    }
+    .accordion-toggle.active:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 17px;
+        width: 0;
+        height: 0;
+        border-bottom: 5px solid #ed9d05;
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+    }
+    .accordion-toggle:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 17px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid #000;
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+    }
+    .accordion-toggle.active:before {
+        display: none;
+    }
+    .accordion-content {
+        display: none;
+    }
+    .accordion-toggle.active {
+        color: #ed9d05;
+    }
